@@ -5,7 +5,7 @@ from keras.layers import Activation, Dropout, Flatten, Dense
 from keras import backend as K
 
 # dimensions of images
-img_width, img_height = 200, 200
+img_width, img_height = 75, 75
 
 train_data_dir = 'Data/TrainData'
 validation_data_dir = 'Data/TestData'
