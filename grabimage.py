@@ -39,12 +39,12 @@ def parse_command_line(raw_args=None):
     )
     parser.add_argument(
         '--input', '-i', default=default_filename,
-        nargs='?', const=input_filename, metavar="input_filename",
+        nargs='?', const=default_filename, metavar="input_filename",
         help='Optional filename for input video file. '
         'Default: {0}'.format(default_filename)
     )
     args = parser.parse_args(raw_args)
-    return args.input_filename
+    return args.input
 
 
 def process_video(video_stream, prefix="whale"):
@@ -61,7 +61,6 @@ def process_video(video_stream, prefix="whale"):
     Returns:
         None.
     """
-    assert raw_args is None or isinstance(raw_args, list)
     count = 0
     success, image = video_stream.read()
     while success:
