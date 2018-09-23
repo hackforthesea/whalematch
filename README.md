@@ -41,4 +41,4 @@ To run the code yourself, you'll need to:
 1. clone this repository - `git clone https://github.com/hackforthesea/whalematch.git`
 2. run `pip install -r Requirements.txt`
 3. cd into whalematch
-4. run `python prediction.py` with a command-line arg for your filename input image (i.e. `python prediction.py -i 'whale589.jpg''
+4. run `python prediction.py` with a command-line arg for your filename input image (i.e. `python prediction.py -i "whale589.jpg" '
