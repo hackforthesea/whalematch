@@ -41,7 +41,7 @@ A (not even close to complete) list of things to make Whalematch 2.0 better:
 To run the code yourself, you'll need to:
 1. clone this repository - `git clone https://github.com/hackforthesea/whalematch.git`
 2. If you don't have pip installed, `sudo apt-get install python-pip python-dev build-essential` 
-3. run `pip install -r requirements.txt`
-4. cd into the whalematch folder where you cloned the whalematch repository
+3. cd into the whalematch folder where you cloned the whalematch repository
+4. run `pip install -r requirements.txt`
 5. run `python prediction.py` with a command-line arg for your filename input image
   5a. Example command: `python prediction.py -i 'whale589.jpg' `
