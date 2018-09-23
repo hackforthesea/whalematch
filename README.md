@@ -22,4 +22,13 @@ We tried two different approaches to the identification and classification probl
 For more on the OpenCV approach, see [this tutorial on face recognition using Haar classifiers](https://docs.opencv.org/3.3.0/d7/d8b/tutorial_py_face_detection.html). For more on the machine learning approaches, see [this tutorial on face recognition using Keras](https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c).
 
 ### The End Product
-Ultimately, the machine learning approach utilizing a convolutional neural net and the Adam optimizer worked best for recognizing and classifying blowholes. 
+Ultimately, the machine learning approach utilizing a convolutional neural net and the Adam optimizer worked best for recognizing and classifying blowholes. Example output from running Whalematch can be seen below.
+
+![Example Whalematch Output](https://raw.githubusercontent.com/hackforthesea/whalematch/master/Whalematch%20Output.jpg)
+
+### Future Work and Improvements
+A (not even close to complete) list of things to make Whalematch 2.0 better:
+1. A larger dataset (both in size and variation) of images without a blowhole for training and images with a blowhole for testing
+2. A dataset mapping whale names to blowholes (for labelling the testing data with more than alphabetical letters)
+3. Fine-tuning the convolutional neural network model for this task specifically
+4. An automatic method for generating the dataset
