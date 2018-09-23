@@ -13,6 +13,43 @@ This script loads a pre-trained CNN model and classifies whale blowholes based
 on a single image
 Isaac Vandor
 """
+from argparse import ArgumentParser
+
+def parse_command_line(raw_args=None):
+    """
+    Parse command-line arguments.
+
+    Use the built-in Python argparse facility to parse the command-line
+    arguments as well as construct and provide meaningful help and feedback
+    should bad data be entered or help be requested. By doing this we'll
+    automatically get a traditional usage message as well as a help
+    response.
+
+    Args:
+        raw_args:   The arguments as obtained from the command line.
+                    Normally this is left at None unless one wants to
+                    load in values for unit testing.
+
+    Returns:
+        The input filename.
+    """
+    assert raw_args is None or isinstance(raw_args, list)
+    # Use the Python argparser to parse command line input and provide
+    # usage information and feedback should bad input be given or help
+    # requested.
+    default_filename = '../6AK2017_BlowholeCompilation_0929.mp4'
+
+    parser = ArgumentParser(
+        description="Grab still images from a video."
+    )
+    parser.add_argument(
+        '--input', '-i', default=default_filename,
+        nargs='?', const=default_filename, metavar="input_filename",
+        help='Optional filename for input video file. '
+        'Default: {0}'.format(default_filename)
+    )
+    args = parser.parse_args(raw_args)
+    return args.input
 
 def load(trained_model):
     """ Loads a pre-trained model. """
@@ -25,7 +62,7 @@ def predict(trained_model, test_image):
     corrects the color channels to be similar to the model's channels
     and predicts the blowhole """
 
-    img = Image.open('whaleblowhole509.jpg')
+    img = Image.open(input_filename)
     img = img.resize((75,75), resample=0)     # resize to 200x200 px
     img = img.save('Data/OutputData/temp.jpg')
     img = imread('Data/OutputData/temp.jpg')
@@ -58,6 +95,7 @@ def find_blowhole(list, dict):
 
 if __name__ == "__main__":
 
+    input_filename = parse_command_line()
     model = load(trained_model='models/model.h5')
     result = predict(trained_model=model, test_image='Data/OutputData/scaledoutput.jpg')
 
