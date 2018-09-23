@@ -35,6 +35,7 @@ A (not even close to complete) list of things to make Whalematch 2.0 better:
 2. A dataset mapping whale names to blowholes (for labelling the testing data with more than alphabetical letters)
 3. Fine-tuning the convolutional neural network model for this task specifically
 4. An automatic method for generating the dataset
+5. Investigation into how we can improve results by using blowhole movement time signatures from video streams
 
 ### Running the code yourself
 To run the code yourself, you'll need to:
