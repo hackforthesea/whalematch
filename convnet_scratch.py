@@ -9,10 +9,10 @@ img_width, img_height = 75, 75
 
 train_data_dir = 'Data/TrainData'
 validation_data_dir = 'Data/TestData'
-nb_train_samples = 7260
-nb_validation_samples = 240
-epochs = 64
-batch_size = 16
+nb_train_samples = 727
+nb_validation_samples = 14
+epochs = 148
+batch_size = 10
 
 # change the number of layers --> 2 to 6
 
@@ -38,7 +38,7 @@ model.add(Flatten())
 model.add(Dense(64))
 model.add(Activation('relu'))
 model.add(Dropout(0.5))
-model.add(Dense(1))
+model.add(Dense(13))
 model.add(Activation('softmax'))
 
 model.compile(loss='binary_crossentropy',
