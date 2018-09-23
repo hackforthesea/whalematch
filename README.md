@@ -1,43 +1,25 @@
 ## Whalematch
 
+### Introduction
 Whalematch is a [Hack for the Sea 2018](https://www.hackforthesea.tech/GLO) project designed to detect, identify, and classify whales based on their blowholes. 
 
-Using a dataset provided by Ocean Alliance, we built a framework to extract still frames from drone footage shot over a whale, pass those still images into a testing and a training set to create a convolutional neural network model, and then predict the unique identifier of a whale given an input image.
+Using a dataset provided by Ocean Alliance, we built a framework to extract still frames from drone footage shot over a whale, pass those still images into a testing and a training set to create a convolutional neural network model, and then predict the unique identifier of a whale given an input image. The block diagram below outlines the way data is passed through Whalematch to create a successful detection.
 
-![This block diagram](https://raw.githubusercontent.com/hackforthesea/whalematch/master/whalematch.jpg) outlines the blocks that make up the Whalematch system for whale identification based on blowhole detection.
+![This block diagram](https://raw.githubusercontent.com/hackforthesea/whalematch/master/whalematch.jpg)
 
-You can use the [editor on GitHub](https://github.com/hackforthesea/whalematch/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Things We Tried that Didn't Work
+We tried two different approaches to the identification and classification problem: one used computer vision techniques while the other used machine learning techniques. Ultimately, the machine learning approach produced more accurate classifications. Future work could include a blending of these approaches, such as using computer vision to pre-process images and improve the machine learning model.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### OpenCV
+1. Haar classification using the full dataset of positive blowholes
+2. Haar classification using an auto-generated dataset
 
-### Markdown
+#### Machine Learning (Keras)
+1. A CNN using the SGD optimizer
+2. A CNN using the Adadelta optimizer
+3. A CNN using the RMSprop optimizer
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For more on the OpenCV approach, see [this tutorial on face recognition using Haar classifiers](https://docs.opencv.org/3.3.0/d7/d8b/tutorial_py_face_detection.html). For more on the machine learning approaches, see [this tutorial on face recognition using Keras](https://medium.freecodecamp.org/making-your-own-face-recognition-system-29a8e728107c).
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hackforthesea/whalematch/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### The End Product
+Ultimately, the machine learning approach utilizing a convolutional neural net and the Adam optimizer worked best for recognizing and classifying blowholes. 
