@@ -1,5 +1,5 @@
 ## Whalematch
-A Hack for the Sea 2018 project designed and developed by [Rich Bean](https://github.com/rbeanqa), [Eric W. Brown](https://github.com/Feneric), [Rhianon Brown](https://github.com/Rhi-Bot), [Ted Greene](https://github.com/tngreene), [Isaac Vandor](https://github.com/isaacvandor), and subject matter expert [Chris Zadra](https://www.linkedin.com/in/chriszadra/).
+A project designed and developed by [Rich Bean](https://github.com/rbeanqa), [Eric W. Brown](https://github.com/Feneric), [Rhianon Brown](https://github.com/Rhi-Bot), [Ted Greene](https://github.com/tngreene), [Isaac Vandor](https://github.com/isaacvandor), and subject matter expert [Chris Zadra](https://www.linkedin.com/in/chriszadra/).
 
 ![Logo](https://raw.githubusercontent.com/hackforthesea/whalematch/master/WhaleMatchLogo.png)
 
