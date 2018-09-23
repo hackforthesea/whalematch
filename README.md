@@ -45,3 +45,6 @@ To run the code yourself, you'll need to:
 4. run `pip install -r requirements.txt`
 5. run `python prediction.py` with a command-line arg for your filename input image
 6. Example command to run classification: `python prediction.py -i 'whale589.jpg' `
+
+### Troubleshooting
+If you have problems with installation or running the code, [start here](https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/). Otherwise, contact one of the developers above or [Isaac Vandor](mailto:isaacvandor@gmail.com)
