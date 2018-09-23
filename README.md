@@ -4,7 +4,7 @@ Whalematch is a [Hack for the Sea 2018](https://www.hackforthesea.tech/GLO) proj
 
 Using a dataset provided by Ocean Alliance, we built a framework to extract still frames from drone footage shot over a whale, pass those still images into a testing and a training set to create a convolutional neural network model, and then predict the unique identifier of a whale given an input image.
 
-[This block diagram](whalematch/whalematch.jpg) outlines the blocks that make up the Whalematch system for whale identification based on blowhole detection.
+![This block diagram](https://raw.githubusercontent.com/hackforthesea/whalematch/master/whalematch.jpg) outlines the blocks that make up the Whalematch system for whale identification based on blowhole detection.
 
 You can use the [editor on GitHub](https://github.com/hackforthesea/whalematch/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
