@@ -63,7 +63,7 @@ def predict(trained_model, test_image):
     and predicts the blowhole """
 
     img = Image.open(input_filename)
-    img = img.resize((75,75), resample=0)     # resize to 200x200 px
+    img = img.resize((75,75), resample=0)     # resize to 75x75 px
     img = img.save('Data/OutputData/temp.jpg')
     img = imread('Data/OutputData/temp.jpg')
     img = img.astype(np.float32)/255.0      # convert to float32

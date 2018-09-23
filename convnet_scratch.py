@@ -45,8 +45,8 @@ model.add(Activation('softmax'))
 #model.compile(loss='binary_crossentropy',
 #              optimizer='rmsprop',
 #              metrics=['accuracy'])
-adadelta = optimizers.Adadelta(lr=1.0, rho=0.95, epsilon=None, decay=0.0)
-model.compile(loss = 'categorical_crossentropy' , optimizer = 'adadelta' , metrics = ['accuracy'] )
+SGD = optimizers.SGD(lr=0.01, momentum=0.0, decay=0.0, nesterov=False)
+model.compile(loss = 'categorical_crossentropy' , optimizer = 'SGD' , metrics = ['accuracy'] )
 
 # this is the augmentation configuration we will use for training
 train_datagen = ImageDataGenerator(
