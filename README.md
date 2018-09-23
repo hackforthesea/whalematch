@@ -27,7 +27,7 @@ For more on the OpenCV approach, see [this tutorial on face recognition using Ha
 ### The End Product
 Ultimately, the machine learning approach utilizing a convolutional neural net and the Adam optimizer worked best for recognizing and classifying blowholes. Example output from running Whalematch can be seen below.
 
-![Example Whalematch Output](https://raw.githubusercontent.com/hackforthesea/whalematch/master/Whalematch%20Output.jpg)
+![Example Whalematch Output](https://raw.githubusercontent.com/hackforthesea/whalematch/master/docs/Whalematch%20Output.jpg)
 
 ### Future Work and Improvements
 A (not even close to complete) list of things to make Whalematch 2.0 better:
@@ -44,4 +44,4 @@ To run the code yourself, you'll need to:
 3. cd into the whalematch folder where you cloned the whalematch repository
 4. run `pip install -r requirements.txt`
 5. run `python prediction.py` with a command-line arg for your filename input image
-  5a. Example command: `python prediction.py -i 'whale589.jpg' `
+6. Example command to run classification: `python prediction.py -i 'whale589.jpg' `
