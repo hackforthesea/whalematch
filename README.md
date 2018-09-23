@@ -42,4 +42,4 @@ To run the code yourself, you'll need to:
 2. run `pip install -r requirements.txt`
 3. cd into whalematch
 4. run `python prediction.py` with a command-line arg for your filename input image
-  4a. Example command: `python prediction.py -i 'whale589.jpg' '
+  4a. Example command: `python prediction.py -i 'whale589.jpg' `
