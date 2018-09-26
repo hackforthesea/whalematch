@@ -50,7 +50,12 @@ To run the code yourself, you'll need to:
 
 1. clone this repository - `git clone https://github.com/hackforthesea/whalematch.git`
 2. Build the docker comtainer - `docker build -t whalematch:dev .`
-3. Run the built container - `docker run -it --rm -v \`pwd\`:/usr/src/app --name whalematch whalematch:dev bash`
+3. Run the built container
+
+```
+docker run -it --rm -v `pwd`:/usr/src/app --name whalematch whalematch:dev bash
+```
+
 4. From the new bash shell within the container, run `python prediction.py -i 'whale589.jpg'`
 
 ### Troubleshooting
