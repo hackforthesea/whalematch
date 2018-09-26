@@ -46,7 +46,7 @@ To run the code yourself, you'll need to:
 5. run `python prediction.py` with a command-line arg for your filename input image
 6. Example command to run classification: `python prediction.py -i 'whale589.jpg' `
 
-### Optional: Running with Docker
+### Optional: Running with Docker ([requires Docker > 0.5.3](https://askubuntu.com/a/477554/151917))
 
 1. clone this repository - `git clone https://github.com/hackforthesea/whalematch.git`
 2. Build the docker comtainer - `docker build -t whalematch:dev .`
