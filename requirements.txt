@@ -4,4 +4,4 @@ numpy==1.14.2
 Pillow==3.3.2
 python-vlc==3.0.102
 tensorboard==1.7.0
-tensorflow==1.7.0
+tensorflow==1.12.2
